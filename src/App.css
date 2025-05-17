@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+
+
+
+
+#root {
+  max-width: 1440px;
+  margin: 0;
+  text-align: center;
+  max-height: 100vh;
+  background-color: #202c36;
+  color:white;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 40px;
+  background-color: #2b3844;
+}
+
+.dark-mode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  font-size:28px;
+}
