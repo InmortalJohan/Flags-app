@@ -1,4 +1,5 @@
 import Card from '../components/Card'
+import AllCuntrys from '../Pages/CuntryPage'
 export default function Start()  {
     return(
         <div className="start">
@@ -15,6 +16,9 @@ export default function Start()  {
                 <div>{<Card/>} </div>
                 <div>{<Card/>} </div>
                 <div>{<Card/>} </div>
+            </div>
+            <div className='flags'>
+                {<AllCuntrys/>}
             </div>
         </div>
     )

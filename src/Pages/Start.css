@@ -4,3 +4,32 @@
     align-items: center;
     padding:50px 40px;
 }
+
+.cardsContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flags{
+    padding: 0px 40px;
+}
+
+.cuntrys{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    gap:20px;
+}
+.cuntrys img{
+    width: 200px;
+}
+.all-flags{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top:50px;
+}
