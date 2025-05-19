@@ -1,20 +1,22 @@
 import "./App.css";
 import "./Pages/Start.css";
 import {
-    createBrowserRouter,
-    createRoutesFromElements,
-    Route,
-    RouterProvider,
-} from 'react-router-dom'
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
-import Start from "./Pages/Start.jsx"
-import Rootlayout from './Layouts/Rootlayout.jsx'
+import Start from "./Pages/Start.jsx";
+import Rootlayout from "./Layouts/Rootlayout.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element= {<Rootlayout />}>
+    <Route path="/" element={<Rootlayout />}>
       <Route index element={<Start />} />
-    </Route>)
+      
+    </Route>
+  )
 );
 
 function App() {
