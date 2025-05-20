@@ -9,6 +9,7 @@ import {
 
 import Start from "./Pages/Start.jsx";
 import Rootlayout from "./Layouts/Rootlayout.jsx";
+import { useEffect } from "react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
 );
 
 function App() {
+ 
   return (
     <div className="App">
       <RouterProvider router={router} />
