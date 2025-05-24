@@ -10,6 +10,7 @@ function SelectBasic({ region, setRegion }) {
 
   return (
     <Select className='select-menu' placeholder="Filter by region" value={region} onChange={handleChange}>
+      <Option value="Any">Select region</Option>
       <Option value="Africa">Africa</Option>
       <Option value="Europe">Europe</Option>
       <Option value="Asia">Asia</Option>
