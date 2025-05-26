@@ -1,0 +1,29 @@
+[33mcommit 637b2f8899bc3fd7f2800157491360ded29749c0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Johan.Holmsten <johan.holmsten2017@gmail.com>
+Date:   Sat May 24 20:23:13 2025 +0200
+
+    update- fixt some more functions in the app still not as i want it to be but i trust the process
+
+[33mcommit 3527be8fba83dfacbaf6bdd9b46f286d3c7d9b9f[m
+Author: Johan.Holmsten <johan.holmsten2017@gmail.com>
+Date:   Tue May 20 22:17:34 2025 +0200
+
+    update- added some style and function- now you can search and filter countrys-still need some more styling and fixing links and routs alsowe clean up the code
+
+[33mcommit 45af41eb438dba64f991f48a97b07b8a3fea4173[m
+Author: Johan.Holmsten <johan.holmsten2017@gmail.com>
+Date:   Mon May 19 23:45:32 2025 +0200
+
+     vers2,5- added som styling while working and made som changes to the code- still lots of work left
+
+[33mcommit 9e1419ddb210bb641d236d665807a40b599801c4[m
+Author: Johan.Holmsten <johan.holmsten2017@gmail.com>
+Date:   Sat May 17 16:34:47 2025 +0200
+
+    version 2 - Added the get requset and displayd it still needs some cleaning up and more work to get it right
+
+[33mcommit 7d1080c91c2c33ecb14f261fe726d920b5e23c84[m
+Author: Johan.Holmsten <johan.holmsten2017@gmail.com>
+Date:   Sat May 17 12:13:20 2025 +0200
+
+    init-first verion of my progress in this project

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import SelectBasic from "../components/SelectBasic";
-import Card from "../components/Card";
+import FilterByRegion from "../components/DropDown";
+import CountryCard from "../components/CountryCard";
+import SearchBar from "../components/SearchBar";
 
 export default function SearchCountry() {
   const url = "https://restcountries.com/v3.1/all";
@@ -34,21 +35,14 @@ export default function SearchCountry() {
   return (
     <div className="start">
       <div className="search-select">
-        <input
-          type="search"
-          name="search-form"
-          id="search-form"
-          className="search-input"
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search for a Country"
-        />
-        <SelectBasic region={region} setRegion={setRegion} />
+        <SearchBar query={query} setQuery={setQuery} />
+        <FilterByRegion region={region} setRegion={setRegion} />
       </div>
 
       <div className="cardsContainer">
         {filtered.length > 0 ? (
           filtered.map((country, index) => (
-            <Card key={index} country={country} />
+            <CountryCard key={index} country={country} />
           ))
         ) : (
           <p>No countries found.</p>

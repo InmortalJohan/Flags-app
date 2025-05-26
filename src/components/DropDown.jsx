@@ -1,7 +1,7 @@
 import Select from '@mui/joy/Select';
 import Option from '@mui/joy/Option';
 
-function SelectBasic({ region, setRegion }) {
+function FilterByRegion({ region, setRegion }) {
   const handleChange = (event, newValue) => {
     if (newValue !== null) {
       setRegion(newValue);
@@ -20,4 +20,4 @@ function SelectBasic({ region, setRegion }) {
   );
 }
 
-export default SelectBasic;
+export default FilterByRegion;

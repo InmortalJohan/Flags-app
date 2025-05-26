@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Card = ({ country }) => {
+const CountryCard = ({ country }) => {
   return (
     <Link to={`/country/${country.cca3}`} className="country-cards">
       <div>
@@ -14,4 +14,4 @@ const Card = ({ country }) => {
   );
 };
 
-export default Card;
+export default CountryCard;

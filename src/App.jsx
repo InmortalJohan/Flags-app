@@ -1,5 +1,5 @@
 import "./App.css";
-import "./Pages/Start.css";
+import "./Pages/Home.css";
 
 import {
   createBrowserRouter,
@@ -8,7 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Start from "./Pages/Start.jsx";
+import Home from "./Pages/Home.jsx";
 import Rootlayout from "./Layouts/Rootlayout.jsx";
 import Country from "./Pages/Country.jsx"
 import { useEffect } from "react";
@@ -16,7 +16,7 @@ import { useEffect } from "react";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Rootlayout />}>
-      <Route index element={<Start />} /> 
+      <Route index element={<Home />} /> 
       <Route path=":id" element={<Country/>}/>
       <Route path="/country/:id" element={<Country />} />
     </Route>

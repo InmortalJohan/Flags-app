@@ -23,13 +23,16 @@ const Country = () => {
 
         // Hämta grannländer med deras namn
         if (countryData.borders && countryData.borders.length > 0) {
-          const bordersRes = await fetch(`https://restcountries.com/v3.1/alpha?codes=${countryData.borders.join(",")}`);
+          const bordersRes = await fetch(
+            `https://restcountries.com/v3.1/alpha?codes=${countryData.borders.join(
+              ","
+            )}`
+          );
           const bordersData = await bordersRes.json();
           setNeighbors(bordersData);
         } else {
           setNeighbors([]);
         }
-
       } catch (err) {
         setError(err.message);
       } finally {
@@ -46,14 +49,25 @@ const Country = () => {
 
   return (
     <div className="country-detail">
-      <Link to="/" className="back-link">← Tillbaka</Link>
+      <Link to="/" className="back-link">
+        ← Tillbaka
+      </Link>
 
       <img src={country.flags?.svg} alt={country.name?.common} width="200" />
       <h1>{country.name.common}</h1>
-      <p><strong>Region:</strong> {country.region}</p>
-      <p><strong>Huvudstad:</strong> {country.capital?.[0]}</p>
-      <p><strong>Befolkning:</strong> {country.population.toLocaleString()}</p>
-      <p><strong>Språk:</strong> {Object.values(country.languages || {}).join(", ")}</p>
+      <p>
+        <strong>Region:</strong> {country.region}
+      </p>
+      <p>
+        <strong>Huvudstad:</strong> {country.capital?.[0]}
+      </p>
+      <p>
+        <strong>Befolkning:</strong> {country.population.toLocaleString()}
+      </p>
+      <p>
+        <strong>Språk:</strong>{" "}
+        {Object.values(country.languages || {}).join(", ")}
+      </p>
 
       <div>
         <h3>Grannländer:</h3>
