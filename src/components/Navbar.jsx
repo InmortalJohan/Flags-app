@@ -1,5 +1,7 @@
 import logo from "../assets/techover-logo.png";
 import icon from "../assets/moon.svg";
+import "./Navbar.css"
+
 
 const Navbar = () => {
   return (
